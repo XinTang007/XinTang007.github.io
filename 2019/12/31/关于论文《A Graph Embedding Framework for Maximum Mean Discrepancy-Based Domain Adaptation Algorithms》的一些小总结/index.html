@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的一些小总结 | 糖小贱的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结1. MMD的引入​        我们知道总体MMD优化函数的表达式如下：   ​        其中$M^0$ 矩阵表达式如下：   ​        如果将$M^0$矩阵用Graph Embe">
+  <meta name="description" content="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结1. MMD的引入​        我们知道总体MMD优化函数的表达式如下：  ​        其中$M^0$ 矩阵表达式如下：  ​        如果将$M^0$矩阵用Graph Embedd">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的一些小总结">
 <meta property="og:url" content="http://yoursite.com/2019/12/31/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="糖小贱的博客">
-<meta property="og:description" content="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结1. MMD的引入​        我们知道总体MMD优化函数的表达式如下：   ​        其中$M^0$ 矩阵表达式如下：   ​        如果将$M^0$矩阵用Graph Embe">
+<meta property="og:description" content="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结1. MMD的引入​        我们知道总体MMD优化函数的表达式如下：  ​        其中$M^0$ 矩阵表达式如下：  ​        如果将$M^0$矩阵用Graph Embedd">
 <meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182029581.png">
 <meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182354327.png">
 <meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231183026715.png">
@@ -192,44 +192,36 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="关于论文《A-Graph-Embedding-Framework-for-Maximum-Mean-Discrepancy-Based-Domain-Adaptation-Algorithms》的小总结"><a href="#关于论文《A-Graph-Embedding-Framework-for-Maximum-Mean-Discrepancy-Based-Domain-Adaptation-Algorithms》的小总结" class="headerlink" title="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结"></a>关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结</h1><h2 id="1-MMD的引入"><a href="#1-MMD的引入" class="headerlink" title="1. MMD的引入"></a><strong>1. MMD的引入</strong></h2><p>​        我们知道总体MMD优化函数的表达式如下：</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182029581.png" style="zoom: 33%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182029581.png" style="zoom: 33%;" /></p>
 <p>​        其中$M^0$ 矩阵表达式如下：</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182354327.png" style="zoom:33%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182354327.png" style="zoom:33%;" /></p>
 <p>​        如果将$M^0$矩阵用Graph Embedding的表达式写出来如下：</p>
 <p>​                                        $M^0 = D^0 - W^0$,</p>
 <p>​                                        其中$D^0$是对角矩阵，$D^0_{ii}=\sum_{j\not=i}W^0_{ij}$ </p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231183026715.png" style="zoom: 50%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231183026715.png" style="zoom: 50%;" /></p>
 <p>​        <a id="more"></a></p>
 <p>​        这里我举例$M^0_{11}$来说明矩阵$M^0$写出$M^0 = D^0 - W^0$是没有问题的。</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/IMG_20191231_191424.jpg" style="zoom:25%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/IMG_20191231_191424.jpg" style="zoom:25%;" /></p>
 <p>​        同理，各类MMD优化函数为：</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231202402322.png" style="zoom: 67%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231202402322.png" style="zoom: 67%;" /></p>
 <p>​        矩阵$M^c$可以用$M^c = D^c - W^c$表示出来。（同前面总体MMD类似）</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231202003286.png" style="zoom:50%;" />
-
-<h2 id="2-各类MMD所存在的问题"><a href="#2-各类MMD所存在的问题" class="headerlink" title="2. 各类MMD所存在的问题"></a><strong>2. 各类MMD所存在的问题</strong></h2><p>​        作者通过将MMD用Graph Embedding表达出来后，有：$G = {X, W^0+\sum_cW^c}$。根据$W^0_{ij},W^c_{ij}$的表达式，发现了问题所在：当$x_i，x_j$属于同一类数据时，他们之间的关系是negative weights,也就是负权重。理论上，在Graph Embedding中，相同类别的数据联系更加密切，应该positive weights才对。</p>
-<h2 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a><strong>3. 解决方法</strong></h2><h3 id="3-1-函数优化的表达式"><a href="#3-1-函数优化的表达式" class="headerlink" title="3.1 函数优化的表达式"></a>3.1 函数优化的表达式</h3><p>​        作者引入了一个修正图（revision graph）:$ \Delta G={X, \Delta W}$,将修正图$G$相加之后得到的$G+\Delta G$新的更能体现类间联系的MMD矩阵。$ \triangle G$的计算过程如下：</p>
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231202003286.png" style="zoom:50%;" /></p>
+<h2 id="2-各类MMD所存在的问题"><a href="#2-各类MMD所存在的问题" class="headerlink" title="2. 各类MMD所存在的问题"></a><strong>2. 各类MMD所存在的问题</strong></h2><p>​        作者通过将MMD用Graph Embedding表达出来后，有：$G = \{X, W^0+\sum_cW^c\}$。根据$W^0_{ij},W^c_{ij}$的表达式，发现了问题所在：当$x_i，x_j$属于同一类数据时，他们之间的关系是negative weights,也就是负权重。理论上，在Graph Embedding中，相同类别的数据联系更加密切，应该positive weights才对。</p>
+<h2 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a><strong>3. 解决方法</strong></h2><h3 id="3-1-函数优化的表达式"><a href="#3-1-函数优化的表达式" class="headerlink" title="3.1 函数优化的表达式"></a>3.1 函数优化的表达式</h3><p>​        作者引入了一个修正图（revision graph）:$ \Delta G=\{X, \Delta W\}$,将修正图$G$相加之后得到的$G+\Delta G$新的更能体现类间联系的MMD矩阵。$ \triangle G$的计算过程如下：</p>
 <p>​                                        $R = D^r - \Delta W$</p>
 <p>​                                        其中$D^r$是对角矩阵，$D^r_{ii}=\sum_{j\not=i}\Delta W^0_{ij}$ </p>
 <p>​    计算出矩阵$R$之后，我们得到新的优化函数： </p>
 <p>​                                     <img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231203903197.png" style="zoom: 33%;" />              </p>
 <p>​    这里的约束条件$diag(\phi(X)^TP\phi(X)=1)$作用就是降维框架，作者把P矩阵称为惩罚矩阵（penalty graph）即$G^p$的拉普拉斯矩阵。常见的降维方法有PCA，LDA，所以$P$矩阵可以根据选择的降维方法得到。</p>
 <h3 id="3-2-函数求解过程"><a href="#3-2-函数求解过程" class="headerlink" title="3.2 函数求解过程"></a>3.2 函数求解过程</h3><p>​    根据约束条件，我们引入Language乘子，得到拉格朗日函数如下：</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231204916105.png" style="zoom: 33%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231204916105.png" style="zoom: 33%;" /></p>
 <p>​                            </p>
 <p>对函数$L(A,\Theta)$关于$A$求导，并令导数等于0：$\partial L(A,\Theta) \over {\partial A}$$=0$ ,有最终的函数：</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231205542694.png" style="zoom:33%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231205542694.png" style="zoom:33%;" /></p>
 <p>​    最后进行特征值分解，求特征向量便可得到投影矩阵A。</p>
 <h2 id="4-算法流程"><a href="#4-算法流程" class="headerlink" title="4. 算法流程"></a><strong>4. 算法流程</strong></h2><p><strong>$Input$</strong>:源域数据$Xs$、标签$Ys$和目标域$Xt$。以及平衡因子$λ$；投影子空间的维度$m$；迭代次数$T$。</p>
 <ul>
-<li><p>构建MMD矩阵M，修正图$ΔG={X, ΔW}$和惩罚图$Gp={X, ΔW}$；以及集合$Mc$，其中$c=1,2,3…C$.</p>
+<li><p>构建MMD矩阵M，修正图$ΔG=\{X, ΔW\}$和惩罚图$Gp=\{X, ΔW\}$；以及集合$Mc$，其中$c=1,2,3…C$.</p>
 </li>
 <li><p><strong><em>For 1:T</em></strong></p>
 <ul>
@@ -244,18 +236,15 @@
 <p><strong>$Output$:</strong>得到最后的投影矩阵。</p>
 <h2 id="5-关于修正图-ΔG-的求解方式"><a href="#5-关于修正图-ΔG-的求解方式" class="headerlink" title="5.关于修正图$ΔG$的求解方式"></a><strong>5.关于修正图$ΔG$的求解方式</strong></h2><p>​    我们前面已经知道了求解修正图$ΔG$的关键是求解矩阵<em>R</em>，而矩阵<em>R</em>的表达式如下：$R = D^r - \triangle W$，其中$D^r$是对角矩阵，$D^r_{ii}=\sum_{j\not=i}\triangle W^0_{ij}$ 。作者给出了两种求解<em>R</em>矩阵的方式，分别为<em>Global Compactness, Local Neighborhood</em>。</p>
 <h3 id="5-1-Global-compactness"><a href="#5-1-Global-compactness" class="headerlink" title="5.1 Global compactness"></a>5.1 <em>Global compactness</em></h3><p>​    令$\Delta W=diag(\Delta W_S, \Delta W_T)$,：</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231211927197.png" style="zoom:33%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231211927197.png" style="zoom:33%;" /></p>
 <p>​        $\alpha_c,\beta_c$都不是负权重<em>(non-negative weights)</em>,并且他们都是不确定的<em>(left unfixed)</em>。它们的平衡取决于样本，例如对于区分度很高的样本集，它们的权重不需要很大；但对于类别不平衡的样本，它们的权重应该有所不同。作者在自己的实验中，$\alpha_c,\beta_c$的计算方式如下：</p>
 <p>​                                                    $\alpha_c={N_S\over n_S^c}$,    $\beta_c={N_T\over n_T^c}$</p>
 <p>​        进而得到矩阵$R=diag(R_S, R_T)$,</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214546700.png" style="zoom:33%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214546700.png" style="zoom:33%;" /></p>
 <h3 id="5-2-Local-Neighborhood"><a href="#5-2-Local-Neighborhood" class="headerlink" title="5.2 Local Neighborhood"></a>5.2 Local Neighborhood</h3><p>​        作者定义$k$个与样本$x_i$的拥有同类标签即$y_i$的近邻点。当$x_j$是$x_i$的同域同类的近邻点时，$\eta_{ij}=1$;否则$\eta_{ij}=0$（无论是源域或者目标域都是如此）。于是可以由如下表达式，得到$\Delta W_S, \Delta W_T$：</p>
 <p>​                                          <img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214306742.png" style="zoom:33%;" />                            </p>
 <p>​        进而得到对角矩阵$R=diag(R_S, R_T)$,</p>
-<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214725958.png" style="zoom:33%;" />
-
+<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214725958.png" style="zoom:33%;" /></p>
 <p>​        $\alpha_c,\beta_c$的计算方式如下：</p>
 <p>​                                                    $\alpha_c={N_S\over k+k_i}$,    $\beta_c={N_T\over k+k_i}$</p>
 

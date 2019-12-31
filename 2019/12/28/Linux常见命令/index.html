@@ -183,11 +183,11 @@
 <p>ls -c 按时间修改顺序查看</p>
 <p>ls -h 以人性化的方式显示文件大小</p>
 <a id="more"></a>
-
 <h2 id="4-tar打包命令"><a href="#4-tar打包命令" class="headerlink" title="4.tar打包命令"></a>4.tar打包命令</h2><p>(1)使用tar命令将文件打包压缩</p>
 <p>tar cvzf tmp.tar.gz /home/tmp </p>
 <p>(2)使用tar命令将文件解压</p>
 <p>tar xvf tmp.tar</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -195,7 +195,8 @@
 <th>生成档案文件，创建打包文件</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-v</td>
 <td>列出归档解档的详细过程，显示进度</td>
 </tr>
@@ -211,8 +212,11 @@
 <td>-x</td>
 <td>解开档案文件</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="5-gzip命令"><a href="#5-gzip命令" class="headerlink" title="5.gzip命令"></a>5.gzip命令</h2><p>gzip [选项] 被压缩的文件</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -220,14 +224,18 @@
 <th>解压</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-r</td>
 <td>压缩所有子目录</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="6-unzip解压缩命令"><a href="#6-unzip解压缩命令" class="headerlink" title="6.unzip解压缩命令"></a>6.unzip解压缩命令</h2><p>unzip tmp.zip</p>
 <h2 id="7-chmod命令"><a href="#7-chmod命令" class="headerlink" title="7.chmod命令"></a>7.chmod命令</h2><p>chmod 修改文件权限有两种使用格式：字母法与数字法。</p>
 <p>字母法：chmod u/g/o/a +/-/= rwx 文件</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -235,7 +243,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>u</td>
 <td>user 表示该文件的所有者</td>
 </tr>
@@ -251,7 +260,10 @@
 <td>a</td>
 <td>all 表示这三者皆是</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -259,7 +271,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>+</td>
 <td>增加权限</td>
 </tr>
@@ -271,7 +284,10 @@
 <td>=</td>
 <td>设定权限</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -279,7 +295,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>r</td>
 <td>read 表示可读取，对于一个目录，如果没有r权限，那么就意味着不能通过ls查看这个目录的内容。</td>
 </tr>
@@ -291,10 +308,13 @@
 <td>x</td>
 <td>excute 表示可执行，对于一个目录，如果没有x权限，那么就意味着不能通过cd进入这个目录。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="8-df命令"><a href="#8-df命令" class="headerlink" title="8.df命令"></a>8.df命令</h2><p>查看磁盘使用情况</p>
 <h2 id="9-du命令"><a href="#9-du命令" class="headerlink" title="9.du命令"></a>9.du命令</h2><p>用法du [选项] filename</p>
 <p>以字节为单位显示filename的目录大小</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -302,7 +322,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-a</td>
 <td>递归显示指定目录中各文件和子目录中文件占用的数据块</td>
 </tr>
@@ -318,15 +339,17 @@
 <td>-l</td>
 <td>计算所有文件大小，对硬链接文件计算多次</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="10-ifconfig命令"><a href="#10-ifconfig命令" class="headerlink" title="10.ifconfig命令"></a>10.ifconfig命令</h2><p>显示网卡信息</p>
 <h2 id="11-netstat命令"><a href="#11-netstat命令" class="headerlink" title="11.netstat命令"></a>11.netstat命令</h2><p>netstat [选项]</p>
 <p>例如： netstat -a 查看系统中所有网络监听端口</p>
 <h2 id="12-grep命令"><a href="#12-grep命令" class="headerlink" title="12.grep命令"></a>12.grep命令</h2><p>grep一般格式为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep [-选项] ‘搜索内容串’文件名</span><br></pre></td></tr></table></figure>
-
 <p>在grep命令中输入字符串参数时，最好引号或双引号括起来。例如：grep‘a ’1.txt。</p>
 <p>常用选项说明：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -334,7 +357,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-v</td>
 <td>显示不包含匹配文本的所有行（相当于求反）</td>
 </tr>
@@ -346,7 +370,9 @@
 <td>-i</td>
 <td>忽略大小写</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="13-rpm命令"><a href="#13-rpm命令" class="headerlink" title="13.rpm命令"></a>13.rpm命令</h2><p>rpm用于软件的安装</p>
 <p>用法：rpm [选项] 安装文件 </p>
 <p>列出所有已安装的rpm包：rpm -qa</p>
@@ -358,6 +384,7 @@
 <p>用法：umount 目标目录</p>
 <h2 id="16-find命令"><a href="#16-find命令" class="headerlink" title="16.find命令"></a>16.find命令</h2><p>用法：find 路径 filename</p>
 <p>常用用法：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -365,7 +392,8 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>find ./ -name test.sh</td>
 <td>查找当前目录下所有名为test.sh的文件</td>
 </tr>
@@ -397,7 +425,9 @@
 <td>find ./ -perm 0777</td>
 <td>查找当前目录下权限为 777 的文件或目录</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h2 id="17-top命令"><a href="#17-top命令" class="headerlink" title="17.top命令"></a>17.top命令</h2><p>查看CUP的使用</p>
 <p>用法:top</p>
 <h2 id="18-kill命令"><a href="#18-kill命令" class="headerlink" title="18.kill命令"></a>18.kill命令</h2><p>kill用于杀死进程</p>
