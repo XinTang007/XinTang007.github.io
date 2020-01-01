@@ -156,6 +156,75 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-C++复习Day-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/01/C++%E5%A4%8D%E4%B9%A0Day-1/">C++复习Day-1</a>
+    </h1>
+  
+
+        
+        <a href="/2020/01/01/C++%E5%A4%8D%E4%B9%A0Day-1/" class="archive-article-date">
+  	<time datetime="2020-01-01T10:41:17.011Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-函数重载Overload"><a href="#1-函数重载Overload" class="headerlink" title="1.函数重载Overload"></a>1.函数重载Overload</h1><h2 id="1-1函数重载的规则"><a href="#1-1函数重载的规则" class="headerlink" title="1.1函数重载的规则"></a>1.1函数重载的规则</h2><p>​        函数重载的本质是采用了name mangling或者name decoration技术。==在重载时实际上会生成多个不同的函数名==，不同编译器有不同的生成规则。它的使用规则如下：</p>
+<ul>
+<li>函数名相同</li>
+<li>参数个数不同，类型不同，顺序不同</li>
+</ul>
+<h2 id="1-2函数重载易错点"><a href="#1-2函数重载易错点" class="headerlink" title="1.2函数重载易错点"></a>1.2函数重载易错点</h2><p>​        利用返回值不同来实现函数重载是错误的，会产生二义性。例如下面这样写是错误的。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func1</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">double</span> b)</span> </span>&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"int a, double b"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">func1</span><span class="params">(<span class="keyword">double</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"double a, int b"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/01/01/C++%E5%A4%8D%E4%B9%A0Day-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Typora使用过程中遇到的问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
