@@ -6,17 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/1 | 糖小贱的博客</title>
+  <title>Semi-supervised Deep Domain Adaptation via Coupled Neural Networks | 糖小贱的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="糖小贱的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2020/01/index.html">
+  <meta name="description" content="论文为2个域构建了深层的网络结构。  ​    $W_s^{(l)}$指的是源域第$l$层的转换矩阵，$b_s^{(l)}$指源域第$l$层的权重矩阵或者说是偏差参数。$h_{s,i}^{(l)}$指的是与源域对应的$H_s^{(l))}$的第$l$个隐含层的第$i$列样本。同理，下标是$t$则是指目标域。 1.1作者在源域和目标域之间建立了一种结构关系，表达式如下：  ​     我对该公式的解">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Semi-supervised Deep Domain Adaptation via Coupled Neural Networks">
+<meta property="og:url" content="http://yoursite.com/2020/01/03/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/index.html">
 <meta property="og:site_name" content="糖小贱的博客">
-<meta property="og:description" content="~">
+<meta property="og:description" content="论文为2个域构建了深层的网络结构。  ​    $W_s^{(l)}$指的是源域第$l$层的转换矩阵，$b_s^{(l)}$指源域第$l$层的权重矩阵或者说是偏差参数。$h_{s,i}^{(l)}$指的是与源域对应的$H_s^{(l))}$的第$l$个隐含层的第$i$列样本。同理，下标是$t$则是指目标域。 1.1作者在源域和目标域之间建立了一种结构关系，表达式如下：  ​     我对该公式的解">
+<meta property="og:image" content="http://yoursite.com/2020/01/03/image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103143921416.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/03/image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103151402490.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/03/image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103153849050.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/03/image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103155022158.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/03/image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103155540124.png">
+<meta property="article:published_time" content="2020-01-03T06:28:41.351Z">
+<meta property="article:modified_time" content="2020-01-03T11:00:22.378Z">
 <meta property="article:author" content="糖心">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/01/03/image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103143921416.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -154,130 +162,170 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Semi-supervised Deep Domain Adaptation via Coupled Neural Networks" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Semi-supervised Deep Domain Adaptation via Coupled Neural Networks
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/03/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/" class="archive-article-date">
+
+        
+        <a href="/2020/01/03/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/" class="archive-article-date">
   	<time datetime="2020-01-03T06:28:41.351Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/03/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/">Semi-supervised Deep Domain Adaptation via Coupled Neural Networks</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>论文为2个域构建了深层的网络结构。</p>
+<p><img src="../image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103143921416.png" alt="image-20200103143921416" style="zoom: 33%;" /></p>
+<p>​    $W_s^{(l)}$指的是源域第$l$层的转换矩阵，$b_s^{(l)}$指源域第$l$层的权重矩阵或者说是偏差参数。$h_{s,i}^{(l)}$指的是与源域对应的$H_s^{(l))}$的第$l$个隐含层的第$i$列样本。同理，下标是$t$则是指目标域。</p>
+<h2 id="1-1"><a href="#1-1" class="headerlink" title="1.1"></a>1.1</h2><p>作者在源域和目标域之间建立了一种结构关系，表达式如下：</p>
+<p><img src="../image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103151402490.png" alt="image-20200103151402490" style="zoom: 33%;" /></p>
+<p>​     我对该公式的解读：已知源域各类的类心$h_{s,c}^{(l)}$,现在给目标域每一个点$h_j$依概率计算其在源域对应的位置$h_j^s=\sum_{c=1}^CP_{t,c}^j h_{s,c}^{(L)}$,$P_t^{j,c}$是目标域的点$h_j$属于第c类的概率。  （$h_j^s$是我自己定义的）</p>
+<p>​    然后求目标域每个点与其在目标域对应位置的距离的平方：$s_j=||h_j^s-h_j||^2$；再对每个点所对应的距离进行求和$\sum_j^{n_t}s_j$，再除以$n_t$;最后得到的是平均距离。</p>
+<h2 id="1-2-SoftMax-regression"><a href="#1-2-SoftMax-regression" class="headerlink" title="1.2 SoftMax regression"></a>1.2 SoftMax regression</h2><p>作者进一步给出源域的Softmax regression(回归)，形式如下：</p>
+<p><img src="../image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103153849050.png" alt="image-20200103153849050" style="zoom: 33%;" /></p>
+<p>​    $1\{·\}$的含义：$1\{y_{s,i}=c\}$ 你可以看做一个大小为$n_s×c$的二维矩阵U，当源域的数据$x_i$对应的标签为$c$时，那么$U\{i,c\}=1$。</p>
+<p>​    参数$\theta_1,\theta_2，…，\theta_c$是模型参数（model parameters）;</p>
+<p>​    表达式（2）中的概率$p_{t,c}^j$的计算方法如下：</p>
+<p><img src="../image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103155022158.png" alt="image-20200103155022158" style="zoom:33%;" /></p>
+<pre><code>## 1.3
+</code></pre><p>​    作者表示，现有的深度学习只对源域进行了Softmax regression操作。作者对未标记的目标域数据依不同的概率进行了标签分配，于是带有这样“标签”目标域数据也可以进行Softmax回归训练了。以此建立半监督分类器如下：</p>
+<p><img src="../image/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/image-20200103155540124.png" alt="image-20200103155540124" style="zoom: 50%;" /></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/03/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/01/C++%E5%A4%8D%E4%B9%A0Day-2/" class="archive-article-date">
-  	<time datetime="2020-01-01T13:14:36.517Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/01/01/C++%E5%A4%8D%E4%B9%A0Day-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">C++复习Day-2</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/01/C++%E5%A4%8D%E4%B9%A0Day-2/">C++复习Day-2</a>
-    </h1>
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Semi-supervised Deep Domain Adaptation via Coupled Neural Networks" data-title="Semi-supervised Deep Domain Adaptation via Coupled Neural Networks" data-url="http://yoursite.com/2020/01/03/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/01/C++%E5%A4%8D%E4%B9%A0Day-1/" class="archive-article-date">
-  	<time datetime="2020-01-01T10:41:17.011Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/01/C++%E5%A4%8D%E4%B9%A0Day-1/">C++复习Day-1</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/01/Typora%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2019-12-31T16:38:01.219Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/01/Typora%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">Typora使用过程中遇到的问题</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -300,8 +348,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
