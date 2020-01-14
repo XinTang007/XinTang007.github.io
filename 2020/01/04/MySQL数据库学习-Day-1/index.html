@@ -6,17 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/12 | 糖小贱的博客</title>
+  <title>MySQL数据库学习-Day-1 | 糖小贱的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="糖小贱的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/12/index.html">
+  <meta name="description" content="1. MySQL配置1.1 MySQL服务启动 手动。 cmd—&gt; services.msc 打开服务的窗口 使用管理员打开cmd net start mysql : 启动mysql的服务 net stop mysql:关闭mysql服务    1.2 MySQL登录 mysql -uroot -p密码  mysql -hip -uroot -p连接目标的密码    注：h+连接目标的IP地">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL数据库学习-Day-1">
+<meta property="og:url" content="http://yoursite.com/2020/01/04/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0-Day-1/index.html">
 <meta property="og:site_name" content="糖小贱的博客">
-<meta property="og:description" content="~">
+<meta property="og:description" content="1. MySQL配置1.1 MySQL服务启动 手动。 cmd—&gt; services.msc 打开服务的窗口 使用管理员打开cmd net start mysql : 启动mysql的服务 net stop mysql:关闭mysql服务    1.2 MySQL登录 mysql -uroot -p密码  mysql -hip -uroot -p连接目标的密码    注：h+连接目标的IP地">
+<meta property="og:image" content="http://yoursite.com/2020/01/04/image/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0-Day-1/image-20200104144435454.png">
+<meta property="article:published_time" content="2020-01-04T06:20:19.579Z">
+<meta property="article:modified_time" content="2020-01-05T00:53:40.259Z">
 <meta property="article:author" content="糖心">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/01/04/image/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0-Day-1/image-20200104144435454.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -154,76 +158,204 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-MySQL数据库学习-Day-1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/31/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-1/" class="archive-article-date">
-  	<time datetime="2019-12-31T13:52:37.966Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/31/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-1/">迁移学习论文-1</a>
+    <h1 class="article-title" itemprop="name">
+      MySQL数据库学习-Day-1
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/28/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2019-12-28T04:51:10.389Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-28</time>
+        
+        <a href="/2020/01/04/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0-Day-1/" class="archive-article-date">
+  	<time datetime="2020-01-04T06:20:19.579Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-04</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/28/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/">Linux常见命令</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-MySQL配置"><a href="#1-MySQL配置" class="headerlink" title="1. MySQL配置"></a>1. MySQL配置</h1><h2 id="1-1-MySQL服务启动"><a href="#1-1-MySQL服务启动" class="headerlink" title="1.1 MySQL服务启动"></a>1.1 MySQL服务启动</h2><ul>
+<li>手动。</li>
+<li>cmd—&gt; services.msc 打开服务的窗口</li>
+<li>使用管理员打开cmd<ul>
+<li>net start mysql : 启动mysql的服务</li>
+<li>net stop mysql:关闭mysql服务</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-2-MySQL登录"><a href="#1-2-MySQL登录" class="headerlink" title="1.2 MySQL登录"></a>1.2 MySQL登录</h2><ul>
+<li><p>mysql -uroot -p<strong>密码</strong></p>
+</li>
+<li><p>mysql -h<strong>ip</strong> -uroot -p连接目标的密码</p>
+<p>   注：h+连接目标的IP地址；p后面可以直接跟密码。</p>
+</li>
+<li><p>mysql —host=ip —user=root —password=连接目标的密码</p>
+</li>
+</ul>
+<h2 id="1-3-MySQL退出"><a href="#1-3-MySQL退出" class="headerlink" title="1.3 MySQL退出"></a>1.3 MySQL退出</h2><ul>
+<li><p>exit</p>
+</li>
+<li><p>quit</p>
+</li>
+</ul>
+<h2 id="1-4-MySQL目录安装"><a href="#1-4-MySQL目录安装" class="headerlink" title="1.4 MySQL目录安装"></a>1.4 MySQL目录安装</h2><ul>
+<li>MySQL安装目录<ul>
+<li>配置文件：my.init</li>
+</ul>
+</li>
+</ul>
+<p><img src="../image/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0-Day-1/image-20200104144435454.png" alt="image-20200104144435454" style="zoom: 67%;" /></p>
+<ul>
+<li>MySQL数据目录<ul>
+<li>数据库：文件夹</li>
+<li>表：文件：</li>
+<li>数据：数据</li>
+</ul>
+</li>
+</ul>
+<h1 id="2-SQL的概念"><a href="#2-SQL的概念" class="headerlink" title="2. SQL的概念"></a>2. SQL的概念</h1><h2 id="2-1-什么是SQL"><a href="#2-1-什么是SQL" class="headerlink" title="2.1 什么是SQL"></a>2.1 什么是SQL</h2><p>​    Structured Query Language：结构化查询语言; 其实就是定义了操作所有关系型数据库的规则。</p>
+<h2 id="2-2-SQL通用语法"><a href="#2-2-SQL通用语法" class="headerlink" title="2.2 SQL通用语法"></a>2.2 SQL通用语法</h2><p>+ </p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/04/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0-Day-1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/01/08/SD/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          SD
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2020/01/03/Semi-supervised%20Deep%20Domain%20Adaptation%20via%20Coupled%20Neural%20Networks/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Semi-supervised Deep Domain Adaptation via Coupled Neural Networks</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="MySQL数据库学习-Day-1" data-title="MySQL数据库学习-Day-1" data-url="http://yoursite.com/2020/01/04/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0-Day-1/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -246,8 +378,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

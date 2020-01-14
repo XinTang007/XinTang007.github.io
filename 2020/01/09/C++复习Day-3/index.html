@@ -6,34 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的一些小总结 | 糖小贱的博客</title>
+  <title>C++复习Day-3 | 糖小贱的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结1. MMD的引入​        我们知道总体MMD优化函数的表达式如下：  ​        其中$M^0$ 矩阵表达式如下：  ​">
+  <meta name="description" content="1.汇编语言1.1Intel汇编    汇编种类 通用寄存器     X86汇编（64bit） RAX\RBX\RCX\RDX   X86汇编（32bit） EAX\EBX\ECX\EDX   8086(16bit) AX\BX\CX\DX      R开头的寄存器是64bit的，占8字节  E开头的寄存器是32bit的，占4字节   1.2内联汇编1234__asm&amp;#123;	mov eax,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的一些小总结">
-<meta property="og:url" content="http://yoursite.com/2019/12/31/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:title" content="C++复习Day-3">
+<meta property="og:url" content="http://yoursite.com/2020/01/09/C++%E5%A4%8D%E4%B9%A0Day-3/index.html">
 <meta property="og:site_name" content="糖小贱的博客">
-<meta property="og:description" content="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结1. MMD的引入​        我们知道总体MMD优化函数的表达式如下：  ​        其中$M^0$ 矩阵表达式如下：  ​">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182029581.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182354327.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231183026715.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/IMG_20191231_191424.jpg">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231202402322.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231202003286.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231203903197.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231204916105.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231205542694.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231205542694.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231211927197.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214546700.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214306742.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214725958.png">
-<meta property="article:published_time" content="2019-12-31T13:52:37.966Z">
-<meta property="article:modified_time" content="2020-01-01T12:42:52.594Z">
+<meta property="og:description" content="1.汇编语言1.1Intel汇编    汇编种类 通用寄存器     X86汇编（64bit） RAX\RBX\RCX\RDX   X86汇编（32bit） EAX\EBX\ECX\EDX   8086(16bit) AX\BX\CX\DX      R开头的寄存器是64bit的，占8字节  E开头的寄存器是32bit的，占4字节   1.2内联汇编1234__asm&amp;#123;	mov eax,">
+<meta property="article:published_time" content="2020-01-09T14:43:41.110Z">
+<meta property="article:modified_time" content="2020-01-13T14:02:02.838Z">
 <meta property="article:author" content="糖心">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182029581.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -171,82 +156,114 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的一些小总结" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-C++复习Day-3" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的一些小总结
+      C++复习Day-3
     </h1>
   
 
         
-        <a href="/2019/12/31/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/" class="archive-article-date">
-  	<time datetime="2019-12-31T13:52:37.966Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
+        <a href="/2020/01/09/C++%E5%A4%8D%E4%B9%A0Day-3/" class="archive-article-date">
+  	<time datetime="2020-01-09T14:43:41.110Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="关于论文《A-Graph-Embedding-Framework-for-Maximum-Mean-Discrepancy-Based-Domain-Adaptation-Algorithms》的小总结"><a href="#关于论文《A-Graph-Embedding-Framework-for-Maximum-Mean-Discrepancy-Based-Domain-Adaptation-Algorithms》的小总结" class="headerlink" title="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结"></a>关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的小总结</h1><h2 id="1-MMD的引入"><a href="#1-MMD的引入" class="headerlink" title="1. MMD的引入"></a><strong>1. MMD的引入</strong></h2><p>​        我们知道总体MMD优化函数的表达式如下：</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182029581.png" style="zoom: 33%;" /></p>
-<p>​        其中$M^0$ 矩阵表达式如下：</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231182354327.png" style="zoom:33%;" /></p>
-<p>​        <a id="more"></a></p>
-<p>​        如果将$M^0$矩阵用Graph Embedding的表达式写出来如下：</p>
-<p>​                                        $M^0 = D^0 - W^0$,</p>
-<p>​                                        其中$D^0$是对角矩阵，$D^0_{ii}=\sum_{j\not=i}W^0_{ij}$ </p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231183026715.png" style="zoom: 50%;" /></p>
-<p>​        这里我举例$M^0_{11}$来说明矩阵$M^0$写出$M^0 = D^0 - W^0$是没有问题的。</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/IMG_20191231_191424.jpg" style="zoom:25%;" /></p>
-<p>​        同理，各类MMD优化函数为：</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231202402322.png" style="zoom: 67%;" /></p>
-<p>​        矩阵$M^c$可以用$M^c = D^c - W^c$表示出来。（同前面总体MMD类似）</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231202003286.png" style="zoom:50%;" /></p>
-<h2 id="2-各类MMD所存在的问题"><a href="#2-各类MMD所存在的问题" class="headerlink" title="2. 各类MMD所存在的问题"></a><strong>2. 各类MMD所存在的问题</strong></h2><p>​        作者通过将MMD用Graph Embedding表达出来后，有：$G = \{X, W^0+\sum_cW^c\}$。根据$W^0_{ij},W^c_{ij}$的表达式，发现了问题所在：当$x_i，x_j$属于同一类数据时，他们之间的关系是negative weights,也就是负权重。理论上，在Graph Embedding中，相同类别的数据联系更加密切，应该positive weights才对。</p>
-<h2 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a><strong>3. 解决方法</strong></h2><h3 id="3-1-函数优化的表达式"><a href="#3-1-函数优化的表达式" class="headerlink" title="3.1 函数优化的表达式"></a>3.1 函数优化的表达式</h3><p>​        作者引入了一个修正图（revision graph）:$ \Delta G=\{X, \Delta W\}$,将修正图$G$相加之后得到的$G+\Delta G$新的更能体现类间联系的MMD矩阵。$ \triangle G$的计算过程如下：</p>
-<p>​                                        $R = D^r - \Delta W$</p>
-<p>​                                        其中$D^r$是对角矩阵，$D^r_{ii}=\sum_{j\not=i}\Delta W^0_{ij}$ </p>
-<p>​    计算出矩阵$R$之后，我们得到新的优化函数： </p>
-<p>​                                     <img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231203903197.png" style="zoom: 33%;" />              </p>
-<p>​    这里的约束条件$diag(\phi(X)^TP\phi(X)=1)$作用就是降维框架，作者把P矩阵称为惩罚矩阵（penalty graph）即$G^p$的拉普拉斯矩阵。常见的降维方法有PCA，LDA，所以$P$矩阵可以根据选择的降维方法得到。</p>
-<h3 id="3-2-函数求解过程"><a href="#3-2-函数求解过程" class="headerlink" title="3.2 函数求解过程"></a>3.2 函数求解过程</h3><p>​    根据约束条件，我们引入Language乘子，得到拉格朗日函数如下：</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231204916105.png" style="zoom: 33%;" /></p>
-<p>​                            </p>
-<p>对函数$L(A,\Theta)$关于$A$求导，并令导数等于0：$\partial L(A,\Theta) \over {\partial A}$$=0$ ,有最终的函数：</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231205542694.png" style="zoom:33%;" /></p>
-<p>​    最后进行特征值分解，求特征向量便可得到投影矩阵A。</p>
-<h2 id="4-算法流程"><a href="#4-算法流程" class="headerlink" title="4. 算法流程"></a><strong>4. 算法流程</strong></h2><p><strong>$Input$</strong>:源域数据$Xs$、标签$Ys$和目标域$Xt$。以及平衡因子$λ$；投影子空间的维度$m$；迭代次数$T$。</p>
+        <h1 id="1-汇编语言"><a href="#1-汇编语言" class="headerlink" title="1.汇编语言"></a>1.汇编语言</h1><h2 id="1-1Intel汇编"><a href="#1-1Intel汇编" class="headerlink" title="1.1Intel汇编"></a>1.1Intel汇编</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>汇编种类</th>
+<th>通用寄存器</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X86汇编（64bit）</td>
+<td>RAX\RBX\RCX\RDX</td>
+</tr>
+<tr>
+<td>X86汇编（32bit）</td>
+<td>EAX\EBX\ECX\EDX</td>
+</tr>
+<tr>
+<td>8086(16bit)</td>
+<td>AX\BX\CX\DX</td>
+</tr>
+</tbody>
+</table>
+</div>
 <ul>
-<li><p>构建MMD矩阵M，修正图$ΔG=\{X, ΔW\}$和惩罚图$Gp=\{X, ΔW\}$；以及集合$Mc$，其中$c=1,2,3…C$.</p>
+<li><p>R开头的寄存器是64bit的，占8字节</p>
 </li>
-<li><p><strong><em>For 1:T</em></strong></p>
-<ul>
-<li>计算矩阵R和矩阵P。以及拉普拉斯矩阵ΔG和Gp。</li>
-<li>解特征方程：<img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231205542694.png" style="zoom: 25%;" />得到投影矩阵A。</li>
-<li>训练自适应分类器$F$，重构源域数据$Xs$。</li>
-<li>使用分类器$F$，更新目标域的伪标签$Yt0$ 以及条件矩阵$M^c$。</li>
-</ul>
+<li><p>E开头的寄存器是32bit的，占4字节</p>
 </li>
 </ul>
-<p>​    <strong><em>end</em></strong></p>
-<p><strong>$Output$:</strong>得到最后的投影矩阵。</p>
-<h2 id="5-关于修正图-ΔG-的求解方式"><a href="#5-关于修正图-ΔG-的求解方式" class="headerlink" title="5.关于修正图$ΔG$的求解方式"></a><strong>5.关于修正图$ΔG$的求解方式</strong></h2><p>​    我们前面已经知道了求解修正图$ΔG$的关键是求解矩阵<em>R</em>，而矩阵<em>R</em>的表达式如下：$R = D^r - \triangle W$，其中$D^r$是对角矩阵，$D^r_{ii}=\sum_{j\not=i}\triangle W^0_{ij}$ 。作者给出了两种求解<em>R</em>矩阵的方式，分别为<em>Global Compactness, Local Neighborhood</em>。</p>
-<h3 id="5-1-Global-compactness"><a href="#5-1-Global-compactness" class="headerlink" title="5.1 Global compactness"></a>5.1 <em>Global compactness</em></h3><p>​    令$\Delta W=diag(\Delta W_S, \Delta W_T)$,：</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231211927197.png" style="zoom:33%;" /></p>
-<p>​        $\alpha_c,\beta_c$都不是负权重<em>(non-negative weights)</em>,并且他们都是不确定的<em>(left unfixed)</em>。它们的平衡取决于样本，例如对于区分度很高的样本集，它们的权重不需要很大；但对于类别不平衡的样本，它们的权重应该有所不同。作者在自己的实验中，$\alpha_c,\beta_c$的计算方式如下：</p>
-<p>​                                                    $\alpha_c={N_S\over n_S^c}$,    $\beta_c={N_T\over n_T^c}$</p>
-<p>​        进而得到矩阵$R=diag(R_S, R_T)$,</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214546700.png" style="zoom:33%;" /></p>
-<h3 id="5-2-Local-Neighborhood"><a href="#5-2-Local-Neighborhood" class="headerlink" title="5.2 Local Neighborhood"></a>5.2 Local Neighborhood</h3><p>​        作者定义$k$个与样本$x_i$的拥有同类标签即$y_i$的近邻点。当$x_j$是$x_i$的同域同类的近邻点时，$\eta_{ij}=1$;否则$\eta_{ij}=0$（无论是源域或者目标域都是如此）。于是可以由如下表达式，得到$\Delta W_S, \Delta W_T$：</p>
-<p>​                                          <img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214306742.png" style="zoom:33%;" />                            </p>
-<p>​        进而得到对角矩阵$R=diag(R_S, R_T)$,</p>
-<p><img src="/image/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/image-20191231214725958.png" style="zoom:33%;" /></p>
-<p>​        $\alpha_c,\beta_c$的计算方式如下：</p>
-<p>​                                                    $\alpha_c={N_S\over k+k_i}$,    $\beta_c={N_T\over k+k_i}$</p>
+<h2 id="1-2内联汇编"><a href="#1-2内联汇编" class="headerlink" title="1.2内联汇编"></a>1.2内联汇编</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">__asm&#123;</span><br><span class="line">	mov eax, <span class="number">10</span>H</span><br><span class="line">	mov ebx, <span class="number">20</span>H</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="1-3汇编指令"><a href="#1-3汇编指令" class="headerlink" title="1.3汇编指令"></a>1.3汇编指令</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">指令</th>
+<th style="text-align:center">作用说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">mov  dest,  src</td>
+<td style="text-align:center">将src的内容赋值给dest，类似于dest = src；mov指令不能对2个内存进行操作。</td>
+</tr>
+<tr>
+<td style="text-align:center">[ 地址值 ]</td>
+<td style="text-align:center">中括号[  ]里面放的都是内存地址；word是2个字节，dword是4个字节，qword是8个字节。</td>
+</tr>
+<tr>
+<td style="text-align:center">call 函数地址</td>
+<td style="text-align:center">调用函数</td>
+</tr>
+<tr>
+<td style="text-align:center">lea  dest,  [ 地址值 ]</td>
+<td style="text-align:center">将地址值赋值给dest，类似于dest = 地址值</td>
+</tr>
+<tr>
+<td style="text-align:center">ret</td>
+<td style="text-align:center">函数返回</td>
+</tr>
+<tr>
+<td style="text-align:center">xor op1, op2</td>
+<td style="text-align:center">将op1和op2异或的结果赋值给op1</td>
+</tr>
+<tr>
+<td style="text-align:center">add  op1,  op2</td>
+<td style="text-align:center">类似于op1 = op1 + op2</td>
+</tr>
+<tr>
+<td style="text-align:center">sub  op1,  op2</td>
+<td style="text-align:center">类似于op1 = op1 - op2</td>
+</tr>
+<tr>
+<td style="text-align:center">inc  op</td>
+<td style="text-align:center">自增，类似于op = op + 1</td>
+</tr>
+<tr>
+<td style="text-align:center">dec op</td>
+<td style="text-align:center">自减，类似于op = op – 1</td>
+</tr>
+<tr>
+<td style="text-align:center">jum 内存地址</td>
+<td style="text-align:center">跳转到某个内存地址去执行代码，j开头一般都是跳转，大多数是带条件的跳转。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mov eax, dword ptr [<span class="number">1122</span>H]</span><br><span class="line"><span class="comment">//将[1122H]中的内容复制给eax，等价于eax==4</span></span><br><span class="line">lea eax, [<span class="number">1122</span>H]</span><br><span class="line"><span class="comment">//将[1122H]的值赋值给eax</span></span><br></pre></td></tr></table></figure>
 
       
 
@@ -305,7 +322,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/31/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/09/C++%E5%A4%8D%E4%B9%A0Day-3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -319,18 +336,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/01/01/Typora%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/01/11/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-2/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Typora使用过程中遇到的问题
+          迁移学习论文-2
         
       </div>
     </a>
   
   
-    <a href="/2019/12/28/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Linux常见命令</div>
+    <a href="/2020/01/08/SD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SD</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -358,7 +375,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的一些小总结" data-title="关于论文《A Graph Embedding Framework for Maximum Mean Discrepancy-Based Domain Adaptation Algorithms》的一些小总结" data-url="http://yoursite.com/2019/12/31/%E5%85%B3%E4%BA%8E%E8%AE%BA%E6%96%87%E3%80%8AA%20Graph%20Embedding%20Framework%20for%20Maximum%20Mean%20Discrepancy-Based%20Domain%20Adaptation%20Algorithms%E3%80%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%80%BB%E7%BB%93/"></div>
+	<div class="ds-thread" data-thread-key="C++复习Day-3" data-title="C++复习Day-3" data-url="http://yoursite.com/2020/01/09/C++%E5%A4%8D%E4%B9%A0Day-3/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

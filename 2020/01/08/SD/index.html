@@ -6,14 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/12 | 糖小贱的博客</title>
+  <title>SD | 糖小贱的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="糖小贱的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/12/index.html">
+  <meta name="description" content="首先是MMD的推导过程：  $\begin{equation} \begin{split}        &amp;\left|\frac{1}{n_{s}} \sum_{i&#x3D;1}^{n_{s}} \mathbf{A}^{\mathrm{T}} \mathbf{x}_{i}-\frac{1}{n_{t}} \sum_{j&#x3D;n_{s}+1}^{n_{s}+n_{t}} \mathbf{A}^{\m">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SD">
+<meta property="og:url" content="http://yoursite.com/2020/01/08/SD/index.html">
 <meta property="og:site_name" content="糖小贱的博客">
-<meta property="og:description" content="~">
+<meta property="og:description" content="首先是MMD的推导过程：  $\begin{equation} \begin{split}        &amp;\left|\frac{1}{n_{s}} \sum_{i&#x3D;1}^{n_{s}} \mathbf{A}^{\mathrm{T}} \mathbf{x}_{i}-\frac{1}{n_{t}} \sum_{j&#x3D;n_{s}+1}^{n_{s}+n_{t}} \mathbf{A}^{\m">
+<meta property="article:published_time" content="2020-01-08T06:43:49.207Z">
+<meta property="article:modified_time" content="2020-01-14T08:08:13.918Z">
 <meta property="article:author" content="糖心">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
@@ -154,76 +156,196 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-SD" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/31/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-1/" class="archive-article-date">
-  	<time datetime="2019-12-31T13:52:37.966Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/31/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-1/">迁移学习论文-1</a>
+    <h1 class="article-title" itemprop="name">
+      SD
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/28/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2019-12-28T04:51:10.389Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-28</time>
+        
+        <a href="/2020/01/08/SD/" class="archive-article-date">
+  	<time datetime="2020-01-08T06:43:49.207Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/28/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/">Linux常见命令</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>首先是MMD的推导过程：</li>
+</ul>
+<p>$\begin{equation<em>} \begin{split}<br>        &amp;\left|\frac{1}{n_{s}} \sum_{i=1}^{n_{s}} \mathbf{A}^{\mathrm{T}} \mathbf{x}_{i}-\frac{1}{n_{t}} \sum_{j=n_{s}+1}^{n_{s}+n_{t}} \mathbf{A}^{\mathrm{T}} \mathbf{x}_{j}\right|^{2}\\<br>        &amp;=\left|\frac{1}{n_{s}} \mathbf{A}^{\mathrm{T}} \begin{bmatrix}<br>\mathbf{x}_1 &amp; \mathbf{x}_2 &amp; \cdots &amp; \mathbf{x}_{n_s}<br>\end{bmatrix}_{1 \times n_s} \begin{bmatrix}<br>1\ 1\ \vdots\ 1 \end{bmatrix}_{n_s \times 1} -\frac{1}{n_{t}} \mathbf{A}^{\mathrm{T}} \begin{bmatrix}<br>\mathbf{x}_1 &amp; \mathbf{x}_2 &amp; \cdots &amp; \mathbf{x}_{n_t}<br>\end{bmatrix}_{1 \times n_t} \begin{bmatrix}<br>1\ <br>1\ <br>\vdots\ <br>1<br>\end{bmatrix}_{n_t \times 1}\right|^{2}\\<br>&amp;=\operatorname{tr} \left(\frac{1}{n^2_{s}} \mathbf{A}^{\mathrm{T}} \mathbf{X}_s \mathbf{1} (\mathbf{A}^{\mathrm{T}} \mathbf{X}_s \mathbf{1})^{\mathrm{T}} +\frac{1}{n^2_{t}} \mathbf{A}^{\mathrm{T}} \mathbf{X}_t \mathbf{1} (\mathbf{A}^{\mathrm{T}} \mathbf{X}_t \mathbf{1})^{\mathrm{T}} - \frac{1}{n_s n_t} \mathbf{A}^{\mathrm{T}} \mathbf{X}_s \mathbf{1} (\mathbf{A}^{\mathrm{T}} \mathbf{X}_t \mathbf{1})^{\mathrm{T}} - \frac{1}{n_s n_t} \mathbf{A}^{\mathrm{T}} \mathbf{X}_t \mathbf{1} (\mathbf{A}^{\mathrm{T}} \mathbf{X}_s \mathbf{1})^{\mathrm{T}}\right)\\<br>&amp;=\operatorname{tr} \left(\frac{1}{n^2_{s}} \mathbf{A}^{\mathrm{T}} \mathbf{X}_s \mathbf{1} \mathbf{1}^{\mathrm{T}} \mathbf{X}_s^{\mathrm{T}} \mathbf{A} +\frac{1}{n^2_{t}} \mathbf{A}^{\mathrm{T}} \mathbf{X}_t \mathbf{1} \mathbf{1}^{\mathrm{T}} \mathbf{X}_t^{\mathrm{T}} \mathbf{A} - \frac{1}{n_s n_t} \mathbf{A}^{\mathrm{T}} \mathbf{X}_s \mathbf{1} \mathbf{1}^{\mathrm{T}} \mathbf{X}_t^{\mathrm{T}} - \frac{1}{n_s n_t} \mathbf{A}^{\mathrm{T}} \mathbf{X}_t \mathbf{1} \mathbf{1}^{\mathrm{T}} \mathbf{X}_s^{\mathrm{T}} \right)\\<br>&amp;=\operatorname{tr} \left[ \mathbf{A}^{\mathrm{T}} \left( \frac{1}{n^2_s} \mathbf{1}\mathbf{1}^{\mathrm{T}} \mathbf{X}_s^{\mathrm{T}} \mathbf{X}_s + \frac{1}{n^2_t} \mathbf{1}\mathbf{1}^{\mathrm{T}} \mathbf{X}_t^{\mathrm{T}} \mathbf{X}_t - \frac{1}{n_s n_t} \mathbf{1} \mathbf{1}^{\mathrm{T}} \mathbf{X}_s^{\mathrm{T}} \mathbf{X}_t - \frac{1}{n_s n_t} \mathbf{1} \mathbf{1}^{\mathrm{T}} \mathbf{X}_t^{\mathrm{T}} \mathbf{X}_s \right) \mathbf{A} \right]\\<br>&amp;=\operatorname{tr} \left( \mathbf{A}^{\mathrm{T}} \begin{bmatrix}<br>\mathbf{X}_s &amp; \mathbf{X}_t<br>\end{bmatrix} \begin{bmatrix}<br>\frac{1}{n^2_s} \mathbf{1}\mathbf{1}^{\mathrm{T}} &amp; \frac{-1}{n_s n_t} \mathbf{1}\mathbf{1}^{\mathrm{T}} \ <br>\frac{-1}{n_s n_t} \mathbf{1}\mathbf{1}^{\mathrm{T}} &amp; \frac{1}{n^2_t} \mathbf{1}\mathbf{1}^{\mathrm{T}}<br>\end{bmatrix}  \begin{bmatrix}<br>\mathbf{X}_s \ \mathbf{X}_t<br>\end{bmatrix} \mathbf{A} \right)\\<br>&amp;=\operatorname{tr} \left( \mathbf{A}^{\mathrm{T}} \mathbf{X} \mathbf{M} \mathbf{X}^{\mathrm{T}}  \mathbf{A} \right)<br>    \end{split}<br>\end{equation</em>}$</p>
+<a id="more"></a>
+<ul>
+<li><p>原来的函数形式：$\textbf{J}_d=\frac{1}{n_t} \sum_{j=1}^{n_t} \left | h_{t,j}^{(L)} - \sum_{c=1}^C p_{c,j}  \overline{h_{s,c}^{(L)}}  \right |^2$</p>
+</li>
+<li><p>改进后的目标函数：$\underset{A}{min} \frac{1}{n_t} \sum_{j=1}^{n_t} \left | \textbf{A}^T x_j - \textbf{A}^T \sum_{c=1}^C \overline{x_{s,c}}   p_{c,j} \right |^2$</p>
+<p>  ==$公式解释：x_j代表目标域的点；\overline{x_{s,c}} 代表源域第c类数据的类心； p_{c,j}代表x_j属于第c类的概率；A是向量投影子空间。$==</p>
+</li>
+<li><p>推导过程如下：</p>
+</li>
+</ul>
+<p>$\frac{1}{n_t} \sum_{j=1}^{n_t} \left | \textbf{A}^T x_j - \textbf{A}^T \sum_{c=1}^C \overline{x_{s,c}}   p_{c,j} \right |^2$</p>
+<p>=$\frac{1}{n_t} \sum_{j=1}^{n_t} \left | \textbf{A}^T x_j - \textbf{A}^T \sum_{c=1}^C (\frac{p_{c,j}}{n_s^c} \sum_{i=1}^{n_s^c}{xi}) \right |^2$</p>
+<p>=$\frac{1}{n_t} \sum_{j=1}^{n_t} \left | \textbf{A}^T x_j - \textbf{A}^T \sum_{c=1}^C \frac{p_{c,j}}{n_s^c} \begin{bmatrix} x_1 &amp; x_2 &amp; … &amp; x_{n_{s}} \end{bmatrix}              \begin{bmatrix} 1 \ 0 \ \vdots \ 1\end{bmatrix}_{n_s\times1} \right |^2$</p>
+<p>=$\frac{1}{n_t} \sum_{j=1}^{n_t} \left | \textbf{A}^T x_j - \textbf{A}^T \sum_{c=1}^C \frac{p_{c,j}}{n_s^c} \textbf{X}s l_{s,c}\right |^2$</p>
+<p>=$\frac{1}{n_t} \sum_{j=1}^{n_t} \left | \textbf{A}^T x_j - \textbf{A}^T \textbf{X}s\sum_{c=1}^C \frac{p_{c,j}}{n_s^c} l_{s,c} \right |^2$</p>
+<p>​        注意这里$p_{c,j}，\frac{1}{n_s^c}$就是一个数；当$x_i\in \textbf{X}_s^c,l^{s,c}_i=1$,简而言之，本来第$c$类的类心是通过$\textbf{X}_s^c$计算所得，但是我在这里通过矩阵$l_{s,c}$在$\textbf{X}s$中挑选属于第$c$类的成员，再进行计算。</p>
+<p>​        记$\frac{p_{c,j}}{n_s^c} l_{s,c}=h_{j,c}$，可得$h_{j,c}$,维度和$L_{s,c}$一样为$ns\times1$；于是有：</p>
+<p>$\sum_{c=1}^C h_{j,c}$</p>
+<p>=$\begin{bmatrix} h_{j,1} &amp; h_{j,2} &amp; … &amp; h_{j,c} \end{bmatrix} \begin{bmatrix} 1 \ 1 \ \vdots \ 1\end{bmatrix}_{c \times 1}$</p>
+<p>=$\textbf{h}_jl_j=H_j$</p>
+<p>​        其中$\textbf{h}_j$是一个维度为$n_s\times c$的矩阵; 而$H_j$是一个维度为$n_s\times 1$的矩阵；</p>
+<p>$原式=\frac{1}{n_t} \sum_{j=1}^{n_t} \left | \textbf{A}^T x_j - \textbf{A}^T \textbf{X}_s H_j\right |^2$</p>
+<p>=$\frac{1}{n_t} \sum_{j=1}^{n_t} tr( \textbf{A}^Tx_jx_j^T \textbf{A} + \textbf{A}^T\textbf{X}sH_jH_j^T\textbf{X}s^T \textbf{A} - \textbf{A}^Tx_jH_j^T\textbf{X}s^T \textbf{A} - \textbf{A}^T\textbf{X}sH_jx_j^T\textbf{A})$</p>
+<p>=$\frac{1}{n_t} tr[ \textbf{A}^T\{(\sum_{j=1}^{n_t}x_jx_j^T)+ \textbf{X}s(\sum_{j=1}^{n_t}H_jH_j^T)\textbf{X}s^T - (\sum_{j=1}^{n_t}x_jH_j^T)\textbf{X}s^T - \textbf{X}s(\sum_{j=1}^{n_t}H_jx_j^T)\}\textbf{A}]$</p>
+<p>=$\frac{1}{n_t} tr[ \textbf{A}^T\{(\begin{bmatrix} x_1 &amp; x_2 &amp; … &amp; x_{n_t} \end{bmatrix} \begin{bmatrix} x_1^T \ x_2^T \ \vdots \ x_{n_t}^T\end{bmatrix})+ \textbf{X}s( \begin{bmatrix} H_1 &amp; H_2 &amp; \cdots  &amp; H_{n_t} \end{bmatrix}\begin{bmatrix} H_1^T \ H_2^T \ \vdots \ H_{n_t}^T\end{bmatrix})\textbf{X}s^T - \cdots $</p>
+<p>​             $\cdots   (\begin{bmatrix} x_1 &amp; x_2 &amp; … &amp; x_{n_t} \end{bmatrix} \begin{bmatrix} H_1^T \ H_2^T \ \vdots \ H_{n_t}^T \end{bmatrix})\textbf{X}s^T - \textbf{X}s(\begin{bmatrix} H_1 &amp; H_2 &amp; … &amp; H_{n_t} \end{bmatrix}\begin{bmatrix} x_1^T \ x_2^T \ \vdots \ x_{n_t}^T\end{bmatrix})\}\textbf{A}]$</p>
+<p>=$\frac{1}{n_t} tr[ \textbf{A}^T(\textbf{X}_t\textbf{X}_t^T+ \textbf{X}s\textbf{H}_{s,t}\textbf{H}_{s,t}^T\textbf{X}s^T - \textbf{X}_t\textbf{H}_{s,t}^T\textbf{X}s^T - \textbf{X}s\textbf{H}_{s,t}\textbf{X}_t^T)\textbf{A}]$</p>
+<p>=$tr( \textbf{A}^T \begin{bmatrix} \textbf{X}_s &amp;\textbf{X}_t \end{bmatrix} \begin{bmatrix} \frac{1}{n_t} \times\textbf{H}_{s,t}\textbf{H}_{s,t}^T &amp; \frac{-1}{n_t} \times\textbf{H}_{s,t}\times \textbf{E}_t^T \ \frac{-1}{n_t} \textbf{E}_t\times \textbf{H}_{s,t}^T &amp; \frac{1}{n_t}\times \textbf{E}_t\textbf{E}_t^T  \end{bmatrix} \begin{bmatrix} \textbf{X}_s^T \ \textbf{X}_t^T \end{bmatrix} \textbf{A}) $</p>
+<p>=$tr( \textbf{A}^T \textbf{X}  \textbf{H} \textbf{A})$</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/08/SD/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/01/09/C++%E5%A4%8D%E4%B9%A0Day-3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          C++复习Day-3
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2020/01/04/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0-Day-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MySQL数据库学习-Day-1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="SD" data-title="SD" data-url="http://yoursite.com/2020/01/08/SD/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -246,8 +368,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -6,14 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/12 | 糖小贱的博客</title>
+  <title>迁移学习论文-2 | 糖小贱的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="糖小贱的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/12/index.html">
+  <meta name="description" content="A novel unsupervised Globality-Locality Preserving Projections in transfer learning1. Globality-Locality Preserving Projection for source domain​    在低维空间中，动态因子(dynamic factor)被表示为： ​">
+<meta property="og:type" content="article">
+<meta property="og:title" content="迁移学习论文-2">
+<meta property="og:url" content="http://yoursite.com/2020/01/11/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-2/index.html">
 <meta property="og:site_name" content="糖小贱的博客">
-<meta property="og:description" content="~">
+<meta property="og:description" content="A novel unsupervised Globality-Locality Preserving Projections in transfer learning1. Globality-Locality Preserving Projection for source domain​    在低维空间中，动态因子(dynamic factor)被表示为： ​">
+<meta property="article:published_time" content="2020-01-11T07:35:04.326Z">
+<meta property="article:modified_time" content="2020-01-11T14:24:40.143Z">
 <meta property="article:author" content="糖心">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
@@ -154,76 +156,198 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-迁移学习论文-2" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/31/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-1/" class="archive-article-date">
-  	<time datetime="2019-12-31T13:52:37.966Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/31/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-1/">迁移学习论文-1</a>
+    <h1 class="article-title" itemprop="name">
+      迁移学习论文-2
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/28/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2019-12-28T04:51:10.389Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-28</time>
+        
+        <a href="/2020/01/11/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-2/" class="archive-article-date">
+  	<time datetime="2020-01-11T07:35:04.326Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-11</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/28/Linux%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/">Linux常见命令</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="A-novel-unsupervised-Globality-Locality-Preserving-Projections-in-transfer-learning"><a href="#A-novel-unsupervised-Globality-Locality-Preserving-Projections-in-transfer-learning" class="headerlink" title="A novel unsupervised Globality-Locality Preserving Projections in transfer learning"></a>A novel unsupervised Globality-Locality Preserving Projections in transfer learning</h1><h3 id="1-Globality-Locality-Preserving-Projection-for-source-domain"><a href="#1-Globality-Locality-Preserving-Projection-for-source-domain" class="headerlink" title="1. Globality-Locality Preserving Projection for source domain"></a>1. Globality-Locality Preserving Projection for source domain</h3><p>​    在低维空间中，动态因子(dynamic factor)被表示为：</p>
+<p>​                                                 $D_{w}=\sum_{i, j=1}^{n_{s}} \sum_{c=1}^{c}\left(\Delta x_{i}-\Delta x_{j}\right)^{2} S_{i j}^{d}$</p>
+<p>其中$S^d$是动态因子的相似矩阵，其中$\Delta x_i=x_i-\mu_c ,i\in c,\Delta x_j=x_j-\mu_c ,j\in c$；</p>
+<p>​    同样的，静态部分由样本类的类心定义，如下：</p>
+<p>​                                                 $S_{b}=\sum_{i j=1}^{C}\left(\mu_{i}-\mu_{j}\right)^{2} S_{i j}^{s}  $</p>
+<p>其中$S^s$表示静态部分的相似矩阵，而$u_i$是第$i$类的类心；</p>
+<p>​    最后，为了在寻找新的子空间的同时保持源数据的原始相似性，最大化目标函数可以写成:</p>
+<p>​                                                  $\underset{V}{max} \frac{\operatorname{Tr}\left(V_{T} S_{b} V\right)}{\operatorname{Tr}\left(V_{T} D_{w} V\right)}$</p>
+<h3 id="2-Maximizing-target-domain-variance"><a href="#2-Maximizing-target-domain-variance" class="headerlink" title="2.Maximizing target domain variance"></a>2.Maximizing target domain variance</h3><p>​        由于目标域特征存在于不相关的维度空间中，我们需要将其投影到目标域数据方差最大的子空间中。因此，我们将方差最大化如下:</p>
+<p>​                                                  $\underset{V}{max} Tr\left(V_{T} S_{t} V\right) $</p>
+<p>其中$S_{t}=\left(X_{t}\right)^{T} H_{t} X_{t}，H_{t}=I_{t}-\frac{1}{n_{t}} 1_{t}\left(1_{t}\right)^{T}$</p>
+<h3 id="3-Marginal-and-conditional-distributions-alignment-term-J-D-st"><a href="#3-Marginal-and-conditional-distributions-alignment-term-J-D-st" class="headerlink" title="3.Marginal and conditional distributions alignment term $J(D_{st})$"></a>3.Marginal and conditional distributions alignment term $J(D_{st})$</h3><p>​        我们所提出的方法在几种非转移学习或转移学习方法中的独特性在于，它既强调了边缘分布，又强调了条件分布，使得源域和目标域的统计对齐是相同的。为了减少源域和目标域之间的边际分布，我们使用了经验最大平均偏差(MMD)[22]。</p>
+<p>​                                       $\underset{V}{min}\left|\frac{1}{n_{S}} \sum_{x_{i} \in X_{t}} V^{T} x_{i}-\frac{1}{n_{t}} \sum_{x_{j} \in X_{t}} V^{T} x_{j}\right|_{F}^{2}=\operatorname{tr}\left(V^{T} X M_{m} X^{T} V\right)$</p>
+<p>​                                                          $\left(M_{m}\right) i j=\left\{\begin{array}{ll}<br>{\frac{1}{n_{1}^{2}}} &amp; {x_{i}, x_{j} \in X_{s}} \\<br>{\frac{1}{n_{t}^{2}}} &amp; {x_{i}, x_{j} \in X_{t}} \\<br>{\frac{1}{n, n_{t}}} &amp; {\text { otherwise }}<br>\end{array}\right.$</p>
+<p>​                                       $\underset{V}{min} \sum_{i=1}^{C}\left|\frac{1}{n_{S}^{i}} \sum_{x_{i} \in X_{s}^{i}} V^{T} x_{i}-\frac{1}{n_{t}^{i}} \sum_{x_{j} \in X_{t}^{i}} V^{T} x_{j}\right|_{F}^{2}=\operatorname{tr}\left(V^{T} X M_{c} X^{T} V\right)$</p>
+<p>​                                                         $\left(M_{c}\right) i j=\left\{\begin{array}{cc}<br>{\frac{1}{\left(n_{s}^{C}\right)^{\mathrm{2}}}} &amp; {x_{i}, x_{j} \in X_{\mathrm{S}}^{C}} \\<br>{\frac{1}{\left(n_{t}^{C}\right)^{\mathrm{2}}}} &amp; {x_{i}, x_{j} \in X_{t}^{C}} \\<br>{\frac{-1}{\left(n_{\mathrm{s}}\right)^{C}\left(n_{t}\right)^{\mathrm{C}}}} &amp; {\left\{\begin{array}{cc}<br>{x_{i} \in X_{\mathrm{S}}^{C}} &amp; {x_{j} \in X_{t}^{C}} \\<br>{x_{i} \in X_{t}^{C}} &amp; {x_{j} \in X_{S}^{C}}<br>\end{array}\right.} \ {0} &amp; {otherwise}   \end{array}\right.$</p>
+<h3 id="4-Geometrical-diffusion-J-H"><a href="#4-Geometrical-diffusion-J-H" class="headerlink" title="4.Geometrical diffusion $J(H)$"></a>4.Geometrical diffusion $J(H)$</h3><p>​        为了同时考虑源域和目标域样本流形的几何性质，引入正则化项J(H)来形成目标函数。</p>
+<p>​                                                       $S_{i j}=\left\{\begin{array}{ll}<br>{1,} &amp; {\text { if } x_{i} \in N_{k}\left(x_{j}\right) | x_{j} \in N_{k}\left(x_{i}\right)} \\<br>{0,} &amp; {\text { otherwise }}<br>\end{array}\right.$</p>
+<p>其中$N_k(x_j)$指的是数据点$x_j$的$k$个近邻点的集合。</p>
+<p>​        我们用$L = D−S$来求拉普拉斯矩阵$S$；其中，$Dis$的对角矩阵的项为$G$的列和,定义一个正则化矩阵：</p>
+<p>​                                                     $\begin{aligned}<br>J(H) &amp;=\sum_{i j}\left(V^{T} x_{i}-V^{T} x_{j}\right)^{2} S_{i j} \\<br>&amp;=2 \sum_{i} V^{T} x_{i} D_{i i} x_{i}^{T} V-2 \sum_{i j} V^{T} x_{i} S_{i j} x_{j}^{T} V \\<br>&amp;=2 V^{T} X(D-S) X^{T} V \\<br>&amp;=2 V^{T} X L X^{T} V<br>\end{aligned}$</p>
+<h3 id="5-Proposed-approach"><a href="#5-Proposed-approach" class="headerlink" title="5.Proposed approach"></a>5.Proposed approach</h3><h4 id="5-1-Formulation-of-objective-function"><a href="#5-1-Formulation-of-objective-function" class="headerlink" title="5.1 Formulation of objective function"></a>5.1 Formulation of objective function</h4><p>​        通过合并上述目标函数，可得最终优化函数：</p>
+<p>​                                        $\underset{V}{max} \frac{\text { Static Part (Source) }+\text { Target Variance }}{ \text { Dynamic Part (Source) }\left.+\text { distributions Alig. }\left(J\left(D_{s t}\right)\right)+\text { Geometrical Diffusion } U(H)\right)}$</p>
+<p>​        数学表达式如下：</p>
+<p>​                                       $\underset{V}{max} \frac{\beta \operatorname{Tr}\left(V_{T} S_{b} V\right)+\alpha V^{T} S_{T} V}{\beta \operatorname{Tr}\left(V_{T} D_{w} V\right)+\operatorname{Tr}\left(V^{T} X\left(\delta M_{m}+(1-\delta) M_{c}\right) X^{T} V\right)+\lambda \operatorname{Tr}\left(V T X L X^{T} V\right)}$</p>
+<h4 id="5-2-Optimization"><a href="#5-2-Optimization" class="headerlink" title="5.2 Optimization"></a>5.2 Optimization</h4><p>​        为了优化上述的最终目标函数，令如下表达式等于1：</p>
+<p>​                                       $V^{T}\left(\beta \operatorname{Tr}\left(S_{b}\right)+\alpha \operatorname{Tr}\left(S_{t}\right)\right) V = 1$</p>
+<p>​        于是有可得：</p>
+<p>​                                      $V_{T}\left(\beta \operatorname{Tr}\left(D_{w}\right)+\operatorname{Tr}\left(X\left(\delta M_{m}+(1-\delta) M_{c}\right) X^{T}\right)+\lambda \operatorname{Tr}\left(X L X^{T}\right)\right) V=1$</p>
+<p>引入Lagrange算子，可得：</p>
+<p>$J=V^{T}\left(\beta \operatorname{Tr}\left(S_{b}\right)+\alpha \operatorname{Tr}\left(S_{t}\right)\right) V+\gamma V_{T}\left(\beta \operatorname{Tr}\left(D_{w}\right)+\operatorname{Tr}\left(X\left(\delta M_{m}+(1-\delta) M_{c}\right) X^{T}\right)+\lambda \operatorname{Tr}\left(X L X^{T}\right)-1\right) V $</p>
+<h4 id="5-3-Optimization-of-V"><a href="#5-3-Optimization-of-V" class="headerlink" title="5.3 Optimization of V"></a>5.3 Optimization of V</h4><p>​        关于$V$求导，并令其等于0；</p>
+<p>$\frac{\partial}{\partial V}\left(\left(V^{T}\left(\beta \operatorname{Tr}\left(S_{b}\right)+\alpha \operatorname{Tr}\left(S_{t}\right)\right) V\right)+\gamma V_{T}\left(\beta \operatorname{Tr}\left(D_{w}\right)+\operatorname{Tr}\left(X\left(\delta M_{m}+(1-\delta) M_{c}\right) X^{T}\right)+\lambda \operatorname{Tr}\left(X L X^{T}\right)-1\right) V\right)=0$</p>
+<p>​        化简为:                          </p>
+<p>​                                    $\begin{aligned}<br>&amp;\left(S_{b}+S_{t}\right) V=\gamma\left(D_{w}+M_{m}+M_{c}+L\right) V\\<br>&amp;\left(S_{b}+S_{t}\right)\left(D_{w}+M_{m}+M_{c}+L\right)^{-1} V=\gamma V<br>\end{aligned}$</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/11/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/01/11/LaTeX%E5%85%A5%E9%97%A8-%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          LaTeX入门-字体设置
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2020/01/09/C++%E5%A4%8D%E4%B9%A0Day-3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">C++复习Day-3</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="迁移学习论文-2" data-title="迁移学习论文-2" data-url="http://yoursite.com/2020/01/11/%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0%E8%AE%BA%E6%96%87-2/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -246,8 +370,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
